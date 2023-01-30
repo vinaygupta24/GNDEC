@@ -29,6 +29,8 @@ h6 {
     color: rgb(24, 24, 49);
 }
 
+/* Home Page */
+
 /* Navigation */
 
 nav {
@@ -82,9 +84,9 @@ nav .navigation ul li a {
     transition: 0.3s ease;
 }
 
-nav .navigation ul li a:hover ,
-nav .navigation ul li a:active {
-    color: rgb(77, 114, 214)
+nav .navigation ul li a.active ,
+nav .navigation ul li a:hover {
+    color: #fdc93b
 }
 
 /* Home */
@@ -459,6 +461,98 @@ footer .copyright .pro-links i:hover {
     color: #2c2c2c;
 }
 
+/* About Page */
+
+#about-home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+        url("images/Collegepicture1.jpg");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: top ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 110px;
+}
+
+#about-home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#about-container {
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+
+#about-container .about-img{
+    width: 60%;
+}
+
+#about-container .about-img img{
+    width: 100%;
+    padding-right: 60px;
+}
+
+#about-container .about-text{
+    width: 40%;
+}
+
+#about-container .about-text h2{
+    color: #29303B;
+    padding-bottom: 15px;
+}
+
+#about-container .about-text p{
+    color: #686f7a;
+    font-weight: 300;
+}
+
+#about-container .about-text .about-fe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+#about-container .about-text .about-fe img {
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+#about-container .about-text .about-fe .fe-text {
+    width: 90%;
+}
+
+#about-container .about-text .about-fe .fe-text h5{
+    font-size: 16px;
+    color: #29303B;
+}
+
+#trust {
+    text-align: center;
+    padding: 8vw;
+}
+
+#trust .trust-img{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trust .trust-img img{
+    width: 90px;
+    height: auto;
+}
+
 
 @media (max-width: 769px) {
     nav {
@@ -534,7 +628,21 @@ footer .copyright .pro-links i:hover {
         flex-wrap: wrap;
         margin-top: 40px;
     }
+
+    /* About Page */
+
+    #about-container {
+        padding: 8vw 4vw 2vw 4vw;
+    }
+    #about-container .about-img {
+        padding-right: 30px;
+    }
+    #trust .trust-img img{
+        width: 50px;
+        height: auto;
+    }
 }
+
 
 @media (max-width: 475px) {
 
@@ -572,6 +680,48 @@ footer .copyright .pro-links i:hover {
     footer .copyright .pro-links {
         margin-top: 15px;
     }
+
+    /* About Page */
+
+    #about-home h2 {
+        font-size: 1.8rem;
+    }
+
+    #about-container {
+        flex-direction: column-reverse;
+    }
+    #about-container .about-img{
+        width: 100%;
+        padding-right: 0px;
+    }
+    #about-container .about-img img {
+        width: 100%;
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+    #about-container .about-text {
+        width: 100%;
+    }
+    #about-container .about-text h2 {
+        text-align: center;
+    }
+    .fe-heading,
+    .trust-heading{
+        font-size: 2rem;
+    }
+    #trust .trust-img {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #trust .trust-img img{
+        width: 60px;
+        margin: 10px 15px;
+    }
+
+
 
 
 }
