@@ -553,6 +553,14 @@ footer .copyright .pro-links i:hover {
     height: auto;
 }
 
+.fe-para{
+    font-size: 20px;
+}
+
+.trust-para{
+    font-size: 20px;
+}
+
 /* Blog Page */
 
 #blog-container{
@@ -610,7 +618,28 @@ footer .copyright .pro-links i:hover {
     line-height: 45px;
 }
 
+/* Post Page */
 
+#blog-container {
+    padding: 8vw 8vw 4vw 8vw !important;
+}
+
+#blog-container .blogpost {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#blog-container .blogpost p{
+    text-align: justify;
+}
+
+.blogpost p {
+    margin-bottom: 20px;
+}
+
+.post img{
+    margin-top: 50px;
+}
 
 
 
@@ -712,6 +741,17 @@ footer .copyright .pro-links i:hover {
     #blog-container {
         padding: 8vw 4vw;
     }
+
+    /* Post Page */
+
+    .post img{
+        margin-top: 80px;
+    }
+
+    #blog-container .blogpost {
+        width: 100%;
+    }
+    
 }
 
 
@@ -807,6 +847,16 @@ footer .copyright .pro-links i:hover {
     }
 
     #blog-container .cate {
+        width: 100%;
+    }
+
+    /* Post Page */
+
+    .post img{
+        margin-top: 100px;
+    }
+
+    #blog-container .blogpost {
         width: 100%;
     }
 
