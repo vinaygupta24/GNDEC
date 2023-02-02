@@ -641,8 +641,13 @@ footer .copyright .pro-links i:hover {
     margin-top: 50px;
 }
 
+/* Courses and  course Detail page */
 
+#course .course-box {
+    margin-bottom: 40px;
+}
 
+#course-detail 
 
 
 
@@ -751,6 +756,10 @@ footer .copyright .pro-links i:hover {
     #blog-container .blogpost {
         width: 100%;
     }
+
+    /* Course and Course detail page */
+
+
     
 }
 
@@ -859,6 +868,8 @@ footer .copyright .pro-links i:hover {
     #blog-container .blogpost {
         width: 100%;
     }
+
+    /* Courses Page */
 
 
 
